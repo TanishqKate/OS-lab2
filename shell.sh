@@ -18,13 +18,11 @@ while [ $i = 1 ]
 	echo "9) Enter into a sub directory"
 	echo "10) Exit Program"
 	echo "Enter your choice"
-	echo "                     "
 	read choice
 
 	case $choice in 
 	1)
 	echo "Enter new file name to be created : "
-	echo "                     "
 	read newfile
 	if [ -f $newfile ]
        	then
@@ -94,8 +92,7 @@ while [ $i = 1 ]
 
 	8) 
 	cd ..
-	echo "Main Directory is here."
-	echo "                     "
+	echo "You have come back to the main directory"
 	echo "Enter name of the directory - "
 	read dname
 	if [ -d $dname ]
@@ -125,3 +122,4 @@ while [ $i = 1 ]
 	esac
 
 done
+echo " Tanishq Kate "
